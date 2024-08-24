@@ -1,0 +1,13 @@
+name: 'Code Review'
+description: 'PR Review'
+author: 'eg-internal'
+inputs:
+  github_token:
+    description: "The default Github Token, used to make comments on PRs. Please specify this via the GITHUB_TOKEN secret"
+    required: true
+  apiKey:
+    description: "The API Key for auth with elasticsearch. This should be stored in the org/repo level secrets"
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/main.js'
