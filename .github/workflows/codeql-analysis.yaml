@@ -5,8 +5,6 @@ on:
   pull_request:
     branches:
       - master
-  schedule:
-    - cron: '10 9 * * 5'
   push:
     branches:
       - master
